@@ -1,2 +1,2 @@
-# task_list
-Aplicação para adicionar e organizar tarefas.
+# TASK LIST
+Aplicação para adicionar e organizar suas listas de tarefas.
