@@ -30,7 +30,7 @@
             try {
                 $connection = Connection::getInstance();
 
-                $query = "SELECT title, status, endDate FROM tasks ORDER BY creationDate;";
+                $query = "SELECT id, title, status, endDate FROM tasks ORDER BY id DESC;";
 
                 $tasks = $connection->prepare($query);
 

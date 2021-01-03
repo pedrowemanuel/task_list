@@ -3,8 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>TASK LIST</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>FRONTED END EM ANDAMENTO ...</h1>
+    <header class="add">
+        <input type="text" id="titleTask" placeholder="Nova tarefa: ">
+        <button title="Adicionar" id="btnAddTask">
+            <i class="fas fa-plus"></i> Adicionar
+        </button>
+    </header>
+
+    <section class="container">
+        <section class="to-do">
+            <header>
+                <h2><i class="fas fa-tasks"></i> Suas tarefas</h2>
+            </header>
+            <div class="tasks">
+                
+            </div>
+        </section>
+        <section class="done">
+            <header>
+                <h2><i class="fas fa-check"></i> Concluídas</h2>
+            </header>
+            <div class="tasks tasks-done">
+                
+            </div>
+        </section>
+    </section>
+
+    <!-- scripts -->
+    <script src="assets/js/main.js"></script>
 </body>
-</html>m
+</html>

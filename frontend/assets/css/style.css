@@ -1,0 +1,168 @@
+/* COR DEFAULT #6C63FF */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+
+body {
+    margin: 0;
+    padding: 0 0 0 50px;
+    outline: 0;
+    background-color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(105, 105, 105);
+}
+
+input {
+    font-family: 'Roboto Mono', monospace;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+header.add {
+    margin: 50px 0;
+    width: 95%;
+    max-width: 600px;
+}
+
+header.add input {
+    width: 60%;
+    box-shadow: 0 0 15px rgba(107, 99, 255, 0.479);
+    height: 30px;
+}
+
+header.add button {
+    width: 30%;
+    background-color: #6C63FF;
+    color: #ffffff;
+    font-weight: 800;
+    box-shadow: 0 0 15px rgba(107, 99, 255, 0.808);
+    height: 40px;
+    transition: 0.5s;
+}
+
+header.add button:hover {
+    background-color: #3933a7;
+}
+
+section.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+}
+section.to-do {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+section.done {
+    display: flex;
+    width: 28%;
+    flex-direction: column;
+}
+
+section .task {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(107, 99, 255, 0.808);
+    padding: 30px 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.task button {
+    background-color: transparent;
+    color: #6C63FF;
+    font-size: 18px;
+}
+
+.body-task {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.body-task .title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.body-task .date-end {
+    font-size: 12px;
+    color: #6C63FF;
+    margin-top: 5px;
+}
+
+.done .body-task .title {
+    text-decoration: line-through;
+}
+
+
+section .delayed {
+    box-shadow: 0 0 15px rgba(255, 99, 99, 0.966);
+}
+
+.delayed button {
+    color: #ff6363;
+}
+
+.delayed .date-end  {
+    color: #ff6363;
+}
+
+/* Mobile */
+
+@media (max-width: 990px) {
+    section.container {
+        flex-direction: column;
+    }
+
+    section.to-do {
+        width: 100%;
+    }
+    
+    section.done {
+        width: 100%;
+    }
+
+    header.add {
+        width: 100%;
+        max-width: 990px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    header.add button {
+        height: 50px;
+    }
+    
+    header.add input {
+        height: 40px;
+    }
+    
+    .body-task .title {
+        font-size: 28px;
+    }
+
+    .body-task .date-end {
+        font-size: 18px;
+    }
+    
+}
+
